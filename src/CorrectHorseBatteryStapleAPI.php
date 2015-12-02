@@ -52,7 +52,6 @@ class CorrectHorseBatteryStapleAPI {
         $response = new Response(json_encode($data), $httpStatus);
         $response->headers->set('Content-Type', 'application/json');
         $response->send();
-        die();
     }
 
     /**
