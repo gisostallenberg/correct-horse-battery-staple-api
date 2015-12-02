@@ -4,12 +4,12 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "38e2535156dcc5fed061bc8506f38573",
-    "content-hash": "556bfa5a317adda7ac74f452e741554f",
+    "hash": "b6f27ebca5ae36c7e9e08c5763dcecd2",
+    "content-hash": "4d2945de4ceffac2c64507cdbee6c700",
     "packages": [
         {
             "name": "gisostallenberg/correct-horse-battery-staple",
-            "version": "dev-master",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/gisostallenberg/correct-horse-battery-staple.git",
@@ -211,9 +211,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "gisostallenberg/correct-horse-battery-staple": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
