@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "993fa3c1fd3070da8d89a66f9882a26c",
-    "content-hash": "be978c8cd08f8fd0e105977b444af72b",
+    "hash": "38e2535156dcc5fed061bc8506f38573",
+    "content-hash": "556bfa5a317adda7ac74f452e741554f",
     "packages": [
         {
             "name": "gisostallenberg/correct-horse-battery-staple",
@@ -13,12 +13,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gisostallenberg/correct-horse-battery-staple.git",
-                "reference": "d45af9b102bb2f5fd144617a986511f6c2fafb7c"
+                "reference": "5be41f0bcba23d25e173e49117e30a738b75a353"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gisostallenberg/correct-horse-battery-staple/zipball/d45af9b102bb2f5fd144617a986511f6c2fafb7c",
-                "reference": "d45af9b102bb2f5fd144617a986511f6c2fafb7c",
+                "url": "https://api.github.com/repos/gisostallenberg/correct-horse-battery-staple/zipball/5be41f0bcba23d25e173e49117e30a738b75a353",
+                "reference": "5be41f0bcba23d25e173e49117e30a738b75a353",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
                 "password strength",
                 "strength"
             ],
-            "time": "2015-12-02 14:52:56"
+            "time": "2015-12-02 16:35:06"
         },
         {
             "name": "symfony/http-foundation",
@@ -155,6 +155,55 @@
                 }
             ],
             "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "time": "2015-11-30 12:36:17"
+        },
+        {
+            "name": "symfony/yaml",
+            "version": "v3.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/yaml.git",
+                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/yaml/zipball/177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
+                "reference": "177a015cb0e19ff4a49e0e2e2c5fc1c1bee07002",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.9"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Yaml\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2015-11-30 12:36:17"
         }

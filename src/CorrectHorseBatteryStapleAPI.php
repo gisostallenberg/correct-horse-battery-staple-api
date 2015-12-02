@@ -9,6 +9,16 @@ use Symfony\Component\Process\Exception\ProcessFailedException;
 use Symfony\Component\Process\Exception\RuntimeException;
 
 class CorrectHorseBatteryStapleAPI {
+
+    /**
+     * Constructor
+     *
+     * @param array $settings
+     */
+    public function __construct(array $settings) {
+        $this->settings = $settings;
+    }
+
     /**
      * Run the API
      */
@@ -65,11 +75,15 @@ class CorrectHorseBatteryStapleAPI {
      */
     private function getPasswordFromRequestData() {
         $request = Request::createFromGlobals();
-        if ($request->getMethod() !== 'POST') {
-            $this->sendErrorResponse('Only POST allowed', Response::HTTP_METHOD_NOT_ALLOWED);
+        if (!in_array($request->getMethod(), $this->settings['security']['request_methods'] ) ) {
+            $this->sendErrorResponse('Request method not allowed', Response::HTTP_METHOD_NOT_ALLOWED);
         }
-        if (!$request->isSecure() ) {
-            $this->sendErrorResponse('Only secure connections allowed');
+
+        if ($this->settings['security']['force_secure'] ) {
+            $request->setTrustedProxies($this->settings['security']['trusted_proxies']);
+            if (!$request->isSecure() ) {
+                $this->sendErrorResponse('Only secure connections allowed');
+            }
         }
 
         return $request->getContent();

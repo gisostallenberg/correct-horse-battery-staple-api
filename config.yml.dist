@@ -1,0 +1,4 @@
+security:
+    request_methods: ['POST']
+    force_secure: true
+    trusted_proxies: []

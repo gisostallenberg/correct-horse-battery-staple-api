@@ -13,7 +13,8 @@
     "type": "project",
     "require": {
         "gisostallenberg/correct-horse-battery-staple": "@dev",
-        "symfony/http-foundation": "^3.0"
+        "symfony/http-foundation": "^3.0",
+        "symfony/yaml": "^3.0"
     },
     "license": "MIT",
     "authors": [
