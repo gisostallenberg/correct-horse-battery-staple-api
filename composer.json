@@ -1,0 +1,31 @@
+{
+    "name": "gisostallenberg/correct-horse-battery-staple-api",
+    "description": "Microservice for the password strength checker 'correct-horse-battery-staple'",
+    "keywords" : [
+        "API",
+        "microservice",
+        "password",
+        "strength",
+        "password strength",
+        "cracklib",
+        "cracklib-check"
+    ],
+    "type": "project",
+    "require": {
+        "gisostallenberg/correct-horse-battery-staple": "@dev",
+        "symfony/http-foundation": "^3.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Giso Stallenberg",
+            "email": "gisostallenberg@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "GisoStallenberg\\CorrectHorseBatteryStapleAPI\\": "src/"
+        }
+    }
+}
